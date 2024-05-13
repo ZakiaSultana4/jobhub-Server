@@ -111,7 +111,7 @@ async function run() {
       const result = await jobsCollection.find(query).toArray();
       res.send(result);
     });
-    // update a job in db
+    // update a job in db by id
     app.put("/job/:id", verifyToken, async (req, res) => {
       const id = req.params.id;
       const jobData = req.body;
