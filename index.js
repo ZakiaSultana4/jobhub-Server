@@ -134,7 +134,7 @@ async function run() {
       const result = await jobsCollection.deleteOne(query);
       res.send(result);
     });
-    // Save a bid data in db
+    // Save a job apply data in db 
     app.post("/bid", async (req, res) => {
       const bidData = req.body;
 
