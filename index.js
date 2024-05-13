@@ -173,7 +173,7 @@ async function run() {
       res.send(result);
     });
 
-    // Get all jobs data from db for pagination
+    // Get all jobs data from db for pagination and seacrch 
     app.get("/all-jobs", async (req, res) => {
       const size = parseInt(req.query.size);
       const page = parseInt(req.query.page) - 1;
