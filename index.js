@@ -100,7 +100,7 @@ async function run() {
       const result = await jobsCollection.findOne(query);
       res.send(result);
     });
-    // get all jobs posted by a specific user
+    // get all jobs posted by a specific user with params email
     app.get("/my-jobs/:email", verifyToken, async (req, res) => {
       // const tokenEmail = req.email
       const email = req.params.email;
