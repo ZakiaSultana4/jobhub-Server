@@ -127,7 +127,7 @@ async function run() {
       res.send(result);
     });
 
-    // delete a job data from db
+    // delete a job data from db for single id
     app.delete("/job/:id", async (req, res) => {
       const id = req.params.id;
       const query = { _id: new ObjectId(id) };
